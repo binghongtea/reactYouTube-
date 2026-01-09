@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useDebounce } from 'react-use'
 import Search from './components/search.jsx'
 import MovieCard from './components/movieCard.jsx'
+import './index.scss'
 
 const Index = () => {
   const [searchInput, setSearchInput] = useState('')

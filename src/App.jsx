@@ -1,9 +1,12 @@
-import Home from './pages/home/index.jsx'
 
-const App = () => {
+import Layout from './layout/index.jsx'
+
+const App = ({ children }) => {
   return (
     <>
-      <Home />
+      <Layout>
+        {children}
+      </Layout>
     </>
   )
 }
