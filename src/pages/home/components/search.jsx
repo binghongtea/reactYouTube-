@@ -1,10 +1,11 @@
 import React from 'react'
+import styles from '../index.module.scss'
 
 const Search = ({ searchInput, setSearchInput }) => {
   return (
     <>
         <input
-          className='search-input'
+          className={styles['search-input']}
           type='text'
           placeholder='Search for a movie'
           value={searchInput}

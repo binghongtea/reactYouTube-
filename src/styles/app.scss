@@ -3,4 +3,13 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+.father-box{
+    padding: 20px 200px;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}

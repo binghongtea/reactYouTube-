@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useDebounce } from 'react-use'
 import Search from './components/search.jsx'
 import MovieCard from './components/movieCard.jsx'
-import './index.scss'
+import styles from './index.module.scss'
 
 const Index = () => {
   const [searchInput, setSearchInput] = useState('')
@@ -56,13 +56,13 @@ const Index = () => {
   }, 2000, [searchInput])
 
   return (
-    <div className='father-box'>
-      <div className='header'>
+    <div className={styles['father-box']}>
+      <div className={styles['header']}>
         <img src='./image/movieLogo.jpg' alt='movieLogo'></img>
-        <span className='header-title'>Find Movies You'll Enjoy Without the Hassle</span>
+        <span className={styles['header-title']}>Find Movies You'll Enjoy Without the Hassle</span>
       </div>
       <Search searchInput={searchInput} setSearchInput={setSearchInput} />
-    <div className='movieList'>
+    <div className={styles['movieList']}>
         {
           isLoading ? 'Loading...' :
           movieList.map((item, index) => (
